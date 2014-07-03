@@ -1,5 +1,7 @@
 {
-  "name": "application-name",
+  "author"      : "Patrick E. Vargas <patrick@vargascorpus.com>",
+  "description" : "The most exquisite portfolio for the strapping young software engineer, Patrick E. Vargas.",
+  "name": "north-american-ninja",
   "version": "0.0.1",
   "private": true,
   "scripts": {
