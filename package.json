@@ -1,19 +1,21 @@
 {
-  "author"      : "Patrick E. Vargas <patrick@vargascorpus.com>",
-  "description" : "The most exquisite portfolio for the strapping young software engineer, Patrick E. Vargas.",
-  "name": "north-american-ninja",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
-  "dependencies": {
-    "express": "~3.4.8",
-    "static-favicon": "~1.0.0",
-    "morgan": "~1.0.0",
-    "cookie-parser": "~1.0.1",
-    "body-parser": "~1.0.0",
-    "debug": "~0.7.4",
-    "jade": "~1.3.0"
-  }
+   "author": "Patrick E. Vargas <patrick@vargascorpus.com>",
+   "description": "The most exquisite portfolio for that strapping, young, software engineer, Patrick E. Vargas.",
+   "name": "north-american-ninja",
+   "version": "0.1.1",
+   "private": true,
+   "scripts": {
+      "start": "node ./bin/www"
+   },
+   "dependencies": {
+      "express": "~3.4.8",
+      "static-favicon": "~1.0.0",
+      "morgan": "~1.0.0",
+      "cookie-parser": "~1.0.1",
+      "body-parser": "~1.0.0",
+      "debug": "~0.7.4",
+      "jade": "~1.3.0",
+      "less": "~1.7.5",
+      "less-middleware": "1.0.4"
+   }
 }
