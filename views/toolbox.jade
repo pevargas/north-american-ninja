@@ -1,11 +1,17 @@
 doctype html
 html(lang="en")
-  head
-    // Meta
-    title= title
-    link(rel="shortcut icon" href="/images/favicon.ico")
-    link(rel="stylesheet", href="/stylesheets/style.css")
-  
-  body
-    // Header
-    header= title    
+   head
+      // Meta
+      title= title
+      link(rel="shortcut icon", href="/images/favicon.ico")
+      link(rel="stylesheet", href="/stylesheets/style.css")
+   
+   body
+      // Header
+      header
+         div.banner
+            h1= title
+
+      // Content
+      article
+         block content    
