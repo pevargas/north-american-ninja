@@ -22,4 +22,10 @@ exports.resume = function( req, res )
 {
 	res.render( 'resume', { title: 'Resume' } );
 };
+
+// GET the music page
+exports.music = function( req, res )
+{
+	res.render( 'music', { title: 'Music' } );
+};
 ///////////////////////////////////////////////////////////////////////////////
