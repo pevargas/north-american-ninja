@@ -54,7 +54,7 @@ app.get('/sandbox', sandbox.index);
 app.get('/sandbox/about', sandbox.about);
 app.get('/sandbox/resume', sandbox.resume);
 app.get('/sandbox/music', sandbox.music);
-
+app.get('/sandbox/design', sandbox.design);
 ///////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////

@@ -28,4 +28,10 @@ exports.music = function( req, res )
 {
 	res.render( 'music', { title: 'Music' } );
 };
+
+// GET the design gallery
+exports.design = function( req, res )
+{
+	res.render( 'design', { title: 'Design' } );
+};
 ///////////////////////////////////////////////////////////////////////////////
