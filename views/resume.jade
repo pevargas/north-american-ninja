@@ -1,0 +1,11 @@
+extends toolbox
+
+block content
+   canvas(id="splashpage", data-processing-sources="/sketches/splash_page.pde")
+      p Your browser does not support the canvas tag.
+   
+block javascript
+   script(type="text/javascript" src="/javascripts/processing.js")
+   script(type="text/javascript").
+      // convenience function to get the id attribute of generated sketch html element
+      function getProcessingSketchId () { return 'splashpage'; }

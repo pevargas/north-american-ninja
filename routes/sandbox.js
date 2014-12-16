@@ -8,12 +8,18 @@
 // GET the index
 exports.index = function( req, res )
 {
-   res.render( 'sandbox', { title: 'Patrick E. Vargas' } );
+   res.render( 'sandbox' );
 };
 
 // GET the about page
 exports.about = function( req, res )
 {
    res.render( 'about', { title: 'About' } );
+};
+
+// GET the resume page
+exports.resume = function( req, res )
+{
+	res.render( 'resume', { title: 'Resume' } );
 };
 ///////////////////////////////////////////////////////////////////////////////

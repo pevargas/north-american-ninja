@@ -2,7 +2,11 @@ doctype html
 html(lang="en")
    head
       // Meta
-      title= title
+      - var site = "Patrick E. Vargas"
+      if ( title )
+         title= title + " | " + site
+      else
+         title= site
 
       link(rel="shortcut icon", href="/images/favicon.ico")
       link(rel="stylesheet", href="/stylesheets/style.css")
@@ -10,10 +14,10 @@ html(lang="en")
       // Header
       header
          div.banner
-            h1= title
+            h1: a(href="/sandbox") Patrick E. Vargas
       nav: menu.banner
          li: a(href="/sandbox/about") About
-         li: a(href="#") Resume
+         li: a(href="/sandbox/resume") Resume
          li: a(href="#") Code
          li: a(href="#") Design
          li: a(href="#") Photography
