@@ -6,13 +6,34 @@ html(lang="en")
 
       link(rel="shortcut icon", href="/images/favicon.ico")
       link(rel="stylesheet", href="/stylesheets/style.css")
-   
    body
       // Header
       header
          div.banner
             h1= title
+      nav: menu.banner
+         li: a(href="/sandbox/about") About
+         li: a(href="#") Resume
+         li: a(href="#") Code
+         li: a(href="#") Design
+         li: a(href="#") Photography
+         li: a(href="#") Music
 
       // Content
       article
          block content    
+
+      footer
+         div.banner
+            ul.contact
+               li &copy; #{new Date().getFullYear()} Patrick E. Vargas 
+               li: a(href="http://www.vargascorpus.com/") www.vargascorpus.com
+            ul.links
+               li Email
+               li Telephone
+               li LinkedIn
+               li StackOverflow
+               li GitHub
+               li Behance
+               
+      block javascript

@@ -1,44 +1,11 @@
 extends toolbox
 
 block content
-   section
-      div.banner
-         h2 About
-         p Single-origin coffee kale chips tousled irony cornhole. Before they sold out wayfarers hella, try-hard chambray craft beer gastropub keytar mixtape keffiyeh Portland irony 3 wolf moon Pinterest you probably haven't heard of them. Godard selvage keffiyeh beard distillery. Before they sold out Blue Bottle authentic 90's food truck meh. Next level hella keytar American Apparel freegan. Food truck Intelligentsia meh, ugh craft beer deep v chambray letterpress Portland pour-over Banksy sriracha. Fanny pack gluten-free flannel, bicycle rights scenester High Life PBR&B freegan cardigan drinking vinegar mustache four loko.
-         p: a(href="/sandbox/about") About
+   canvas(id="splashpage", data-processing-sources="/sketches/splash_page.pde")
+      p Your browser does not support the canvas tag.
    
-   section
-      div.banner
-         h2 Resume
-         p Tilde keytar mixtape Thundercats. Sartorial selfies polaroid, dreamcatcher mlkshk raw denim Wes Anderson typewriter Banksy lo-fi food truck farm-to-table you probably haven't heard of them kogi. Dreamcatcher fingerstache PBR fashion axe, roof party Pinterest craft beer squid. Chambray Williamsburg umami Bushwick, Carles roof party small batch. 3 wolf moon selvage messenger bag, PBR&B American Apparel single-origin coffee keytar retro twee ennui ugh street art Vice flannel. Pickled DIY skateboard, synth letterpress polaroid aesthetic PBR freegan church-key art party viral scenester you probably haven't heard of them. Raw denim swag Tonx 90's, Helvetica tousled Marfa sriracha.
-   
-   section
-      div.banner
-         h2 Code
-         p American Apparel Kickstarter skateboard direct trade Banksy, crucifix drinking vinegar polaroid chambray small batch literally next level chia deep v. Normcore narwhal hashtag Pitchfork yr typewriter, retro fashion axe Wes Anderson four loko viral art party before they sold out aesthetic forage. Helvetica McSweeney's selvage, dreamcatcher tattooed craft beer disrupt seitan mustache ugh polaroid locavore sustainable. Banjo stumptown before they sold out, craft beer try-hard PBR&B literally 90's typewriter. 3 wolf moon chambray Neutra, fanny pack High Life Vice biodiesel ugh gentrify authentic. 3 wolf moon before they sold out High Life synth, lomo roof party vegan Tumblr mumblecore. Godard biodiesel skateboard, dreamcatcher direct trade irony Marfa DIY Bushwick.
-   
-   section
-      div.banner
-         h2 Design
-         p High Life you probably haven't heard of them keytar single-origin coffee trust fund. Jean shorts dreamcatcher quinoa biodiesel viral. Selvage Banksy Thundercats, Tonx locavore forage ennui bitters mustache direct trade before they sold out hella farm-to-table selfies pop-up. Cornhole American Apparel Carles tattooed, slow-carb gentrify fanny pack meggings. Leggings swag Marfa, keytar yr irony vinyl letterpress tilde direct trade roof party Portland. Shoreditch pork belly Tumblr fingerstache bitters ennui, quinoa lomo organic artisan mlkshk +1. Lomo banjo street art single-origin coffee artisan normcore, asymmetrical Thundercats sartorial VHS chambray chillwave roof party distillery.
-
-   section
-      div.banner
-         h2 Music
-         p Single-origin coffee kale chips tousled irony cornhole. Before they sold out wayfarers hella, try-hard chambray craft beer gastropub keytar mixtape keffiyeh Portland irony 3 wolf moon Pinterest you probably haven't heard of them. Godard selvage keffiyeh beard distillery. Before they sold out Blue Bottle authentic 90's food truck meh. Next level hella keytar American Apparel freegan. Food truck Intelligentsia meh, ugh craft beer deep v chambray letterpress Portland pour-over Banksy sriracha. Fanny pack gluten-free flannel, bicycle rights scenester High Life PBR&B freegan cardigan drinking vinegar mustache four loko.
-   
-   section
-      div.banner
-         h2 Photography
-         p Tilde keytar mixtape Thundercats. Sartorial selfies polaroid, dreamcatcher mlkshk raw denim Wes Anderson typewriter Banksy lo-fi food truck farm-to-table you probably haven't heard of them kogi. Dreamcatcher fingerstache PBR fashion axe, roof party Pinterest craft beer squid. Chambray Williamsburg umami Bushwick, Carles roof party small batch. 3 wolf moon selvage messenger bag, PBR&B American Apparel single-origin coffee keytar retro twee ennui ugh street art Vice flannel. Pickled DIY skateboard, synth letterpress polaroid aesthetic PBR freegan church-key art party viral scenester you probably haven't heard of them. Raw denim swag Tonx 90's, Helvetica tousled Marfa sriracha.
-   
-   section
-      div.banner
-         h2 Blog
-         p American Apparel Kickstarter skateboard direct trade Banksy, crucifix drinking vinegar polaroid chambray small batch literally next level chia deep v. Normcore narwhal hashtag Pitchfork yr typewriter, retro fashion axe Wes Anderson four loko viral art party before they sold out aesthetic forage. Helvetica McSweeney's selvage, dreamcatcher tattooed craft beer disrupt seitan mustache ugh polaroid locavore sustainable. Banjo stumptown before they sold out, craft beer try-hard PBR&B literally 90's typewriter. 3 wolf moon chambray Neutra, fanny pack High Life Vice biodiesel ugh gentrify authentic. 3 wolf moon before they sold out High Life synth, lomo roof party vegan Tumblr mumblecore. Godard biodiesel skateboard, dreamcatcher direct trade irony Marfa DIY Bushwick.
-   
-   section
-      div.banner
-         h2 Links
-         p High Life you probably haven't heard of them keytar single-origin coffee trust fund. Jean shorts dreamcatcher quinoa biodiesel viral. Selvage Banksy Thundercats, Tonx locavore forage ennui bitters mustache direct trade before they sold out hella farm-to-table selfies pop-up. Cornhole American Apparel Carles tattooed, slow-carb gentrify fanny pack meggings. Leggings swag Marfa, keytar yr irony vinyl letterpress tilde direct trade roof party Portland. Shoreditch pork belly Tumblr fingerstache bitters ennui, quinoa lomo organic artisan mlkshk +1. Lomo banjo street art single-origin coffee artisan normcore, asymmetrical Thundercats sartorial VHS chambray chillwave roof party distillery.
-
+block javascript
+   script(type="text/javascript" src="/javascripts/processing.js")
+   script(type="text/javascript").
+      // convenience function to get the id attribute of generated sketch html element
+      function getProcessingSketchId () { return 'splashpage'; }
