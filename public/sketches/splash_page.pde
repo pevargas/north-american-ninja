@@ -51,13 +51,14 @@ class Orb
   void update()
   {
     int half = m_size / 2;
-    if ( ( m_px - half ) < 0 || width < ( m_px + half ) )
+    int boundary = m_size * 2;
+    if ( m_px < ( 0 - boundary ) || ( width + boundary ) < m_px )
     {
       m_vx *= -1;
       move();
     }
 
-    if ( ( m_py - half ) < 0 || height < ( m_py + half ) )
+    if ( m_py - half < ( 0 - boundary ) || ( height + boundary ) < m_py + half )
     {
       m_vy *= -1;
       move();
