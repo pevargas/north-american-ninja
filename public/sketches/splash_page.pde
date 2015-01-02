@@ -31,8 +31,8 @@ class Orb
     m_angle = radians(random(360));
     m_vx    = cos(m_angle);
     m_vy    = sin(m_angle);
-    m_px    = random(m_size, width - m_size);
-    m_py    = random(m_size, height - m_size);
+    m_px    = random(-m_size, width + m_size);
+    m_py    = random(-m_size, height + m_size);
     m_color = orb_color(m_size);
     m_vel   = 1;
   }
