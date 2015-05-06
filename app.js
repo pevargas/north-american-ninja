@@ -49,12 +49,13 @@ app.use(app.router);
 ///////////////////////////////////////////////////////////////////////////////
 // Declare the high-level routing information
 // app.get('/', routes.index);
-app.get('/users', users.list);
-app.get('/', sandbox.index);
-app.get('/about', sandbox.about);
-app.get('/resume', sandbox.resume);
-app.get('/music', sandbox.music);
-app.get('/design', sandbox.design);
+app.get('/users'  , users.list);
+app.get('/'       , sandbox.index);
+app.get('/about'  , sandbox.about);
+app.get('/resume' , sandbox.resume);
+app.get('/music'  , sandbox.music);
+app.get('/design' , sandbox.design);
+app.get('/theme'  , sandbox.theme);
 ///////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////
