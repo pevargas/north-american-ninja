@@ -12,41 +12,47 @@ html(lang="en")
       link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
       link(rel="stylesheet", href="/bootstrap/css/bootstrap-theme.min.css")
    body
-      // Header
-      header
-         div.banner
-            h1: a(href="/") Patrick E. Vargas
-      nav: menu.banner
-         li: a(href="/about") About
-         li: a(href="/resume") Resume
-         li: a(href="#") Code
-         li: a(href="/design") Design
-         li: a(href="#") Photography
-         li: a(href="/music") Music
+
+      nav.navbar.navbar-default
+         .container
+            .navbar-header
+               button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                  span.sr-only Toggle navigation         
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+            a.navbar-brand(href='/') Patrick E. Vargas
+            .navbar-collapse.collapse
+               menu.nav.navbar-nav
+                  li: a(href="/about") About
+                  li: a(href="/resume") Resume
+                  li: a(href="#") Code
+                  li: a(href="/design") Design
+                  li: a(href="#") Photography
+                  li: a(href="/music") Music
 
       // Content
       article
          block content    
 
       footer
-         div.banner
-            ul.contact
+         .container
+            ul
                li &copy; #{new Date().getFullYear()} Patrick E. Vargas 
                li: a(href="http://www.vargascorpus.com/") www.vargascorpus.com
-            ul.links
-               li: i(title="Email")
-                  img(src="http://placehold.it/100&text=Email") 
-               li: i(title="Telephone")
-                  img(src="http://placehold.it/100&text=Telephone") 
-               li: i(title="LinkedIn")
-                  img(src="http://placehold.it/100&text=LinkedIn") 
-               li: i(title="StackOverflow")
-                  img(src="http://placehold.it/100&text=StackOverflow") 
-               li: i(title="GitHub")
-                  img(src="http://placehold.it/100&text=GitHub") 
-               li: i(title="Behance")
-                  img(src="http://placehold.it/100&text=Behance") 
+            .row
+               .col-md-2: a(href="#").thumbnail: img(src="http://placehold.it/100&text=Email" alt="Email") 
+               .col-md-2: a(href="#").thumbnail: img(src="http://placehold.it/100&text=Telephone" alt="Telephone") 
+               .col-md-2: a(href="#").thumbnail: img(src="http://placehold.it/100&text=LinkedIn" alt="LinkedIn") 
+               .col-md-2: a(href="#").thumbnail: img(src="http://placehold.it/100&text=StackOverflow" alt="StackOverflow") 
+               .col-md-2: a(href="#").thumbnail: img(src="http://placehold.it/100&text=GitHub" alt="GitHub") 
+               .col-md-2: a(href="#").thumbnail: img(src="http://placehold.it/100&text=Behance" alt="Behance") 
                
       block javascript
 
+      //
+         Bootstrap core JavaScript
+         ==================================================
+         Placed at the end of the document so the pages load faster
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
       script(src="/bootstrap/js/bootstrap.min.js")
