@@ -1,10 +1,11 @@
 ///////////////////////////////////////////////////////////////////////////////
 //  File: splash_page                      Dec 2014
 //  Description:
-//    This sketch will reside on my portfolio's homepage since I hate talking 
+//    This sketch will reside on my portfolio's homepage since I hate talking
 //    about myself, lol
 ///////////////////////////////////////////////////////////////////////////////
 
+///////////////////////////////////////////////////////////////////////////////
 color orb_color(float size)
 {
   if ( size > 75 )
@@ -14,6 +15,7 @@ color orb_color(float size)
 
   return color( 153, 153, 153, random(50) + 200 );
 }
+///////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////
 class Orb
@@ -24,7 +26,7 @@ class Orb
   float m_angle;
   float m_vel;
   color m_color;
-  
+
   Orb()
   {
     m_size  = random(2) * 25 + 50;
@@ -36,59 +38,69 @@ class Orb
     m_color = orb_color(m_size);
     m_vel   = 1;
   }
-  
+
   void draw()
   {
     fill( m_color );
-    ellipse( m_px, m_py,  m_size, m_size);
+    ellipse( m_px, m_py,  m_size, m_size );
   }
-  
+
   void move()
   {
     m_px += m_vx * pow( 2, m_vel );
-    m_py += m_vy * pow( 2, m_vel ); 
+    m_py += m_vy * pow( 2, m_vel );
   }
+
   void update()
   {
     int half = m_size / 2;
     int boundary = m_size * 2;
+    move();
+
     if ( m_px < ( 0 - boundary ) || ( width + boundary ) < m_px )
     {
       m_vx *= -1;
-      move();
+      // m_px -= width + boundary;
     }
 
     if ( m_py - half < ( 0 - boundary ) || ( height + boundary ) < m_py + half )
     {
       m_vy *= -1;
-      move();
+      // m_py -= height + boundary;
     }
 
-    if ( pow( mouseX - m_px, 2 ) + pow( mouseY - m_py, 2) < pow( half, 2 ) )
+    // Check to see if the mouse hit's it
+    if ( pow( mouseX - m_px, 2 ) + pow( mouseY - m_py, 2 ) < pow( half, 2 ) )
     {
       m_vel = 5;
       m_vx *= -1;
       m_vy *= -1;
-      move();
     }
+
+    // Slow the point after the mouse hits it
     if ( m_vel > 1 )
     {
       m_vel -= 0.1;
     }
+
   }
-}
+};
 ///////////////////////////////////////////////////////////////////////////////
 
+///////////////////////////////////////////////////////////////////////////////
 Orb[] orbs;
+int NUM_ORBS = 40;
+///////////////////////////////////////////////////////////////////////////////
+
 ///////////////////////////////////////////////////////////////////////////////
 void setup( )
 {
-  size ( window.innerWidth, 500 );
+  size ( window.innerWidth, window.innerHeight - 125 );
   noStroke( );
   rectMode( CENTER );
-  fill( 0, 165, 201 ); 
-  orbs = new Orb[40];
-  for ( int i = 0; i < 40; ++i )
+  fill( 0, 165, 201 );
+  orbs = new Orb[NUM_ORBS];
+  for ( int i = 0; i < NUM_ORBS; ++i )
   {
     orbs[i] = new Orb();
   }
@@ -105,7 +117,6 @@ void draw( )
     o.update();
     o.move();
   }
-
 }
 ///////////////////////////////////////////////////////////////////////////////
 

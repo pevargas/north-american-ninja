@@ -34,4 +34,10 @@ exports.design = function( req, res )
 {
 	res.render( 'design', { title: 'Design' } );
 };
+
+// GET the theme page
+exports.theme = function( req, res )
+{
+	res.render( 'theme', { title: 'Theme' } );
+};
 ///////////////////////////////////////////////////////////////////////////////
