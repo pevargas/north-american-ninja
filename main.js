@@ -1,33 +1,33 @@
 ///////////////////////////////////////////////////////////////////////////////
-// File: main.js                       October 2014
+// File: main.js
 // Description:
 //    The main configuration file for the node.js application
 ///////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////
 // Routing
-var express = require('express');
+var express         = require('express');
 // Serve up the web site
-var http = require('http');
-var path = require('path');
-var favicon = require('static-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+var http            = require('http');
+var path            = require('path');
+var favicon         = require('static-favicon');
+var logger          = require('morgan');
+var cookieParser    = require('cookie-parser');
+var bodyParser      = require('body-parser');
 
 // For LESS to CSS compilation
-var lessMiddleware = require('less-middleware');
+var lessMiddleware  = require('less-middleware');
 ///////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////
 // Declare the routes used in the application
-var routes = require('./routes');
-var users = require('./routes/user');
-var sandbox = require('./routes/sandbox');
+var routes          = require('./routes');
+var users           = require('./routes/user');
+var sandbox         = require('./routes/sandbox');
 ///////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////
-var app = express();
+var app             = express();
 
 // View Engine Setup
 app.set('views', path.join(__dirname, 'views'));
@@ -49,13 +49,16 @@ app.use(app.router);
 ///////////////////////////////////////////////////////////////////////////////
 // Declare the high-level routing information
 // app.get('/', routes.index);
-app.get('/users'  , users.list);
-app.get('/'       , sandbox.index);
-app.get('/about'  , sandbox.about);
-app.get('/resume' , sandbox.resume);
-app.get('/music'  , sandbox.music);
-app.get('/design' , sandbox.design);
-app.get('/theme'  , sandbox.theme);
+app.get('/users'        , users.list);
+app.get('/'             , sandbox.index);
+app.get('/about'        , sandbox.about);
+app.get('/resume'       , sandbox.resume);
+app.get('/music'        , sandbox.music);
+app.get('/design'       , sandbox.design);
+app.get('/theme'        , sandbox.theme);
+app.get('/code'         , sandbox.software);
+app.get('/photography'  , sandbox.photography);
+
 ///////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////

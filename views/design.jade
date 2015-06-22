@@ -1,5 +1,157 @@
 extends toolbox
 
 block content
-   section.banner
-      
+   .container
+      h2 Design
+
+      p Examples of my design work for various organizations.
+         //- span.help Click each image to enlarge and then click anywhere to diminish.
+
+      .row
+         .col-md-2
+            a(href="#", data-toggle='modal', data-target='#dm1-sequential-images')
+               img.thumbnail(src='/images/design/thumbs/dm1-sequential-images.png', alt='Digital Media One Sequential Images')
+         .col-md-2
+            a(href='#', data-toggle='modal', data-target='#fodd-unconventional-typeface')
+               img.thumbnail(src='/images/design/thumbs/fodd-unconventional-typeface.jpg', alt='Fundamentals of Digital Design Unconventional Typeface Moxie')
+         .col-md-2
+            a(href='#', data-toggle='modal', data-target='#postcard-mhfb-freedom-swing-formal-affair')
+               img.thumbnail(src='/images/design/thumbs/postcard-mhfb-freedom-swing-formal-affair.png', alt='Postcard MHFB Freedom Swing Formal Affair')
+         .col-md-2
+            a(href='#', data-toggle='modal', data-target='#business-cards-anonymous')
+               img.thumbnail(src='/images/design/thumbs/business-cards-anonymous.png', alt='Business Card with Anonymous Quote')
+         .col-md-2
+            a(href='#', data-toggle='modal', data-target='#business-cards-zig-ziglar')
+               img.thumbnail(src='/images/design/thumbs/business-cards-zig-ziglar.png', alt='Business Card with Zig Ziglar Quote')
+         .col-md-2
+            a(href='#', data-toggle='modal', data-target='#business-cards-oscar-wilde')
+               img.thumbnail(src='/images/design/thumbs/business-cards-oscar-wilde.png', alt='Business Card with Oscar Wilde Quote')
+         .col-md-2
+            a(href='#', data-toggle='modal', data-target='#business-cards-lucille-ball')
+               img.thumbnail(src='/images/design/thumbs/business-cards-lucille-ball.png', alt='Business Card with Lucille Ball Quote')
+         .col-md-2
+            a(href='#', data-toggle='modal', data-target='#poster-quote-anonymous')
+               img.thumbnail(src='/images/design/thumbs/poster-quote-anonymous.png', alt='Poster Quote Anonymous')
+         .col-md-2
+            a(href='#', data-toggle='modal', data-target='#poster-quote-zigler')
+               img.thumbnail(src='/images/design/thumbs/poster-quote-zigler.png', alt='Poster Quote Zigler')
+         //- a(href='vargas_project04.pdf') Social Media Book
+
+   // Modals
+   #dm1-sequential-images.modal.fade(tabindex='-1', role='dialog', aria-labelledby='dm1-sequential-images')
+      .modal-dialog.modal-lg(role='document')
+         .modal-content
+            .modal-header
+               button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+               h4.modal-title Digital Media One Sequential Images
+            .modal-body.row
+               img.col-md-9(src='/images/design/dm1-sequential-images.png', alt='Digital Media One Sequential Images')
+               .col-md-3
+                  p.small 2013-02
+                  p In my Digital Media One course, we learned Photoshop. This project, "Sequential Images", we had to compose a pair of images using at least one image found online, one scanned image and one image we took ourselves.
+
+   #fodd-unconventional-typeface.modal.fade(tabindex='-1', role='dialog', aria-labelledby='fodd-unconventional-typeface')
+      .modal-dialog.modal-lg(role='document')
+         .modal-content
+            .modal-header
+               button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+               h4.modal-title Fundamentals of Digital Design Unconventional Typeface Moxie
+            .modal-body.row
+               img.col-md-9(src='/images/design/fodd-unconventional-typeface.jpg', alt='Fundamentals of Digital Design Unconventional Typeface Moxie')
+               .col-md-3
+                  p.small 2014-02
+                  p Our task was to pick a word and depict it using an physical, unconventional typeface. I chose "Moxie", since you've gotta have moxie in order to win at cards!
+
+   #postcard-mhfb-freedom-swing-formal-affair.modal.fade(tabindex='-1', role='dialog', aria-labelledby='postcard-mhfb-freedom-swing-formal-affair')
+      .modal-dialog.modal-lg(role='document')
+         .modal-content
+            .modal-header
+               button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+               h4.modal-title Postcard MHFB Freedom Swing Formal Affair
+            .modal-body.row
+               img.col-md-9(src='/images/design/postcard-mhfb-freedom-swing-formal-affair.png', alt='Postcard MHFB Freedom Swing Formal Affair')
+               .col-md-3
+                  p.small 2014-01
+                  p Designed promotional materials for Freedom Swing, the Jazz Band arm of the Mile High Freedom Band. This postcard was used to send to community members to promote the Formal Affair Swing Jazz concert.
+
+   #business-cards-anonymous.modal.fade(tabindex='-1', role='dialog', aria-labelledby='business-cards-anonymous')
+      .modal-dialog.modal-lg(role='document')
+         .modal-content
+            .modal-header
+               button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+               h4.modal-title Business Card with Anonymous Quote
+            .modal-body.row
+               img.col-md-9(src='/images/design/business-cards-anonymous.png', alt='Business Card with Anonymous Quote')
+               .col-md-3
+                  p.small 2013-04
+                  p Designed business cards in Inkscape. This is one of the alternate backs. This quote is in the style of HTML and reads, "Everything will be okay in the end. If it's not okay, it's not the end" by Anonymous.
+
+   #business-cards-zig-ziglar.modal.fade(tabindex='-1', role='dialog', aria-labelledby='business-cards-zig-ziglar')
+      .modal-dialog.modal-lg(role='document')
+         .modal-content
+            .modal-header
+               button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+               h4.modal-title Business Card with Zig Ziglar Quote
+            .modal-body.row
+               img.col-md-9(src='/images/design/business-cards-zig-ziglar.png', alt='Business Card with Zig Ziglar Quote')
+               .col-md-3
+                  p.small 2013-04
+                  p Designed business cards in Inkscape. This is one of the alternate backs. This quote is in the style of C++ and reads, "The chief cause of failure and unhappiness is trading what you want most for what you want right now." by Zig Ziglar.
+
+   #business-cards-oscar-wilde.modal.fade(tabindex='-1', role='dialog', aria-labelledby='business-cards-oscar-wilde')
+      .modal-dialog.modal-lg(role='document')
+         .modal-content
+            .modal-header
+               button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+               h4.modal-title Business Card with Oscar Wilde Quote
+            .modal-body.row
+               img.col-md-9(src='/images/design/business-cards-oscar-wilde.png', alt='Business Card with Oscar Wilde Quote')
+               .col-md-3
+                  p.small 2013-04
+                  p Designed business cards in Inkscape. This is one of the alternate backs. This quote is in the style of the R programming language and reads, "Be yourself; Everyone else is already taken." By Oscar Wilde.
+
+   #business-cards-lucille-ball.modal.fade(tabindex='-1', role='dialog', aria-labelledby='business-cards-lucille-ball')
+      .modal-dialog.modal-lg(role='document')
+         .modal-content
+            .modal-header
+               button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+               h4.modal-title Business Card with Lucille Ball Quote
+            .modal-body.row
+               img.col-md-9(src='/images/design/business-cards-lucille-ball.png', alt='Business Card with Lucille Ball Quote')
+               .col-md-3
+                  p.small 2013-04
+                  p Designed business cards in Inkscape. This is one of the alternate backs. This quote is in the style of Latex and reads, "I'd rather regret the things I've done than regret the things I haven't done." by Lucille Ball.
+
+   #poster-quote-anonymous.modal.fade(tabindex='-1', role='dialog', aria-labelledby='poster-quote-anonymous')
+      .modal-dialog.modal-lg(role='document')
+         .modal-content
+            .modal-header
+               button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+               h4.modal-title Poster Quote Anonymous
+            .modal-body.row
+               img.col-md-9(src='/images/design/poster-quote-anonymous.png', alt='Poster Quote Anonymous')
+               .col-md-3
+                  p.small 2013-07
+                  p The poster was a side project while designing my business cards. Poster reads, "Everything will be okay in the end. If it's not okay, it's not the end", by Anonymous.
+
+   #poster-quote-zigler.modal.fade(tabindex='-1', role='dialog', aria-labelledby='poster-quote-zigler')
+      .modal-dialog.modal-lg(role='document')
+         .modal-content
+            .modal-header
+               button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+               h4.modal-title Poster Quote Zigler
+            .modal-body.row
+               img.col-md-9(src='/images/design/poster-quote-zigler.png', alt='Poster Quote Zigler')
+               .col-md-3
+                  p.small 2013-07
+                  p The poster was a side project while designing my business cards. Poster reads, "The chief cause of failure and unhappiness is trading what you want most for what you want right now" by Zig Ziglar.
+
