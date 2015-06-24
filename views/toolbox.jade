@@ -11,6 +11,7 @@ html(lang="en")
       link(rel="shortcut icon", href="/images/favicon.ico")
       link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
       link(rel="stylesheet", href="/bootstrap/css/bootstrap-theme.min.css")
+      link(rel="stylesheet", href="/stylesheets/vargas.css")
    body
 
       nav.navbar.navbar-default.navbar-static-top(role="navigation")
@@ -38,12 +39,12 @@ html(lang="en")
          .container
             ul.nav.navbar-nav
                li.navbar-text &copy; #{new Date().getFullYear()} Patrick E. Vargas
-               li: a(href="#"): img(src="http://placehold.it/16&text=Email" alt="Email")
-               li: a(href="#"): img(src="http://placehold.it/16&text=Telephone" alt="Telephone")
-               li: a(href="#"): img(src="http://placehold.it/16&text=LinkedIn" alt="LinkedIn")
-               li: a(href="#"): img(src="http://placehold.it/16&text=StackOverflow" alt="StackOverflow")
-               li: a(href="#"): img(src="http://placehold.it/16&text=GitHub" alt="GitHub")
-               li: a(href="#"): img(src="http://placehold.it/16&text=Behance" alt="Behance")
+               li: a(href="mailto:patrick@yesthisispatrick.com", alt="Email"): i.iemail 
+               li: a(href="tel:720-515-6402", alt="Telephone"): i.iphone
+               li: a(href="http://www.linkedin.com/pub/patrick-vargas/40/953/893", alt="LinkedIn"): i.linked
+               li: a(href="http://careers.stackoverflow.com/vargasp", alt="StackOverflow"): i.istack
+               li: a(href="http://github.com/pevargas", alt="GitHub"): i.igit
+               li: a(href="https://www.behance.net/pevargas", alt="Behance"): i.ibehance
 
       block javascript
 
