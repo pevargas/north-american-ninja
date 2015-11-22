@@ -11,14 +11,13 @@
 angular.module('northAmericanNinjaApp')
   .controller('ModalInstanceCtrl', ModalInstanceCtrl);
 
-function ModalInstanceCtrl($scope, $uibModalInstance, $http, items, source) {
+function ModalInstanceCtrl($scope, $uibModalInstance, $http, source) {
   this.awesomeThings = [
     'HTML5 Boilerplate',
     'AngularJS',
     'Karma'
   ];
-  $scope.items = items;
-
+  
   $scope.close = function close() {
     $uibModalInstance.close();
   };
