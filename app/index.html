@@ -22,7 +22,7 @@
 
     <!-- Add your site or application content here -->
     <div class="header">
-      <div class="navbar navbar-default" role="navigation">
+      <div class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
 
@@ -36,16 +36,16 @@
             <a class="navbar-brand" href="#/">Patrick E. Vargas</a>
           </div>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+          <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="NavbarCtrl">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/resume">Resume</a></li>
-              <li><a ng-href="#/code">Code</a></li>
-              <li><a ng-href="#/design">Design</a></li>
-              <li><a ng-href="#/photography">Photography</a></li>
-              <li><a ng-href="#/music">Music</a></li>
+              <li ng-class="{active: isActive('/') }"><a href="#/">Home</a></li>
+              <li ng-class="{active: isActive('/about') }"><a ng-href="#/about">About</a></li>
+              <li ng-class="{active: isActive('/resume') }"><a ng-href="#/resume">Resume</a></li>
+              <li ng-class="{active: isActive('/code') }"><a ng-href="#/code">Code</a></li>
+              <li ng-class="{active: isActive('/design') }"><a ng-href="#/design">Design</a></li>
+              <li ng-class="{active: isActive('/photography') }"><a ng-href="#/photography">Photography</a></li>
+              <li ng-class="{active: isActive('/music') }"><a ng-href="#/music">Music</a></li>
             </ul>
           </div>
         </div>
@@ -58,7 +58,7 @@
 
     <div class="footer">
       <div class="container">
-        <p>Made with <span class="glyphicon glyphicon-heart"></span></p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Patrick E. Vargas</p>
       </div>
     </div>
 
@@ -100,6 +100,8 @@
         <script src="scripts/controllers/design.js"></script>
         <script src="scripts/controllers/photography.js"></script>
         <script src="scripts/controllers/music.js"></script>
+        <script src="scripts/controllers/modalinstance.js"></script>
+        <script src="scripts/controllers/navbar.js"></script>
         <!-- endbuild -->
 </body>
 </html>
