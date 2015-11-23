@@ -29,12 +29,12 @@ angular
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
+        controller: 'ModalCtrl',
         controllerAs: 'about'
       })
       .when('/code', {
         templateUrl: 'views/code.html',
-        controller: 'CodeCtrl',
+        controller: 'ModalCtrl',
         controllerAs: 'code'
       })
       .when('/resume', {
@@ -44,12 +44,12 @@ angular
       })
       .when('/design', {
         templateUrl: 'views/design.html',
-        controller: 'DesignCtrl',
+        controller: 'ModalCtrl',
         controllerAs: 'design'
       })
       .when('/photography', {
         templateUrl: 'views/photography.html',
-        controller: 'PhotographyCtrl',
+        controller: 'ModalCtrl',
         controllerAs: 'photography'
       })
       .when('/music', {
