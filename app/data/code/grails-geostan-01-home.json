@@ -1,0 +1,6 @@
+{
+  "title":"PB GeoStan &sect; Homepage",
+  "date":"2014-01",
+  "image":"/images/code/grails-geostan-01-home.png",
+  "description":"Created a grails application to showcase Pitney Bowes' geocoder, GeoStan.\n\nHere we see the homepage. Users can search for an address or point using the search bar."
+}

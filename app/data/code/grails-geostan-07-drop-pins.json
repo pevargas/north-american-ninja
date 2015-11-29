@@ -1,0 +1,6 @@
+{
+  "title":"PB GeoStan &sect; Drop Pins",
+  "date":"2014-01",
+  "image":"/images/code/grails-geostan-07-drop-pins.png",
+  "description":"Created a grails application to showcase Pitney Bowes' geocoder, GeoStan.\n\nThis grails application has support for dropping pins on the map. The user then can click any of the markers to run a reverse geocoder run."
+}
