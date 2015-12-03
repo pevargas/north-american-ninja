@@ -1,0 +1,39 @@
+[
+  {
+    "title":"Software Engineer",
+    "image":"/images/photography/to-behance-3.jpg",
+    "description":"Software has changed my life in many ways and I am thankful for it.",
+    "link":"/#/code",
+    "linkText": "Coding Projects"
+  },
+  {
+    "title":"Graphic Designer",
+    "image":"/images/photography/to-behance-14.jpg",
+    "description":"I love graphic design and aspire to make great works of digital art.",
+    "link":"/#/design",
+    "linkText": "Design Projects"
+  },
+  {
+    "title":"Official Resume",
+    "image":"/images/photography/to-behance-15.jpg",
+    "description":"My dream career involves helping people through technology and design.",
+    "link":"/#/resume",
+    "linkText": "Hire Me"
+  },
+  {
+    "title":"Shutter Bug",
+    "image":"/images/photography/to-behance-6.jpg",
+    "description":"Passivly taking photos was my forte and after learning Adobe's Lightroom, I became active.",
+    "link":"/#/photography",
+    "linkText": "Photographs"
+  },
+  {
+    "title":"Composer",
+    "image":"/images/photography/to-behance-12.jpg",
+    "description":"I began my college career in the College of Music",
+    "link":"/#/music",
+    "linkText": "Hear Me Out"
+  }
+
+
+]

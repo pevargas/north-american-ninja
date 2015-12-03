@@ -1,17 +1,36 @@
+// bower:scss
+// endbower
+$teal: #00A5C9;
+
 figcaption {
   font-style: italic;
   color: #333333;
 }
 
-// // bower:scss
- // endbower
-//
-// .browsehappy {
-//   margin: 0.2em 0;
-//   background: #ccc;
-//   color: #000;
-//   padding: 0.2em 0;
-// }
+.carousel {
+  overflow: hidden;
+}
+
+.carousel, .carousel .slide {
+  height: 500px;
+}
+  .slide {
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: 100% auto;
+  }
+
+  .carousel-caption {
+    background-color: rgba($teal, 0.8);
+  }
+
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
 //
 // body {
 //   padding: 0;

@@ -1,4 +1,17 @@
-<div class="jumbotron">
+<div ng-controller="CarouselCtrl">
+  <uib-carousel interval="5000" no-wrap="false" class="carousel">
+    <uib-slide ng-repeat="slide in slides" active="slide.active" class="slide" background-src="{{slide.image}}">
+      <div class="carousel-caption">
+        <h4>{{slide.title}}</h4>
+        <p>{{slide.description}}</p>
+        <a class="btn btn-lg btn-primary" ng-href="{{slide.link}}">{{slide.linkText}}</a>
+      </div>
+    </uib-slide>
+  </uib-carousel>
+</div>
+
+
+<!-- <div class="jumbotron">
   <h1>'Allo, 'Allo!</h1>
   <p class="lead">
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
@@ -20,4 +33,4 @@
 
   <h4>Karma</h4>
   <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+</div> -->
