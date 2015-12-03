@@ -2,7 +2,6 @@
   <uib-carousel interval="5000" no-wrap="false" class="carousel">
     <uib-slide ng-repeat="slide in slides" active="slide.active" class="slide" background-src="{{slide.image}}">
       <div class="carousel-caption">
-        <h4>{{slide.title}}</h4>
         <p>{{slide.description}}</p>
         <a class="btn btn-lg btn-primary" ng-href="{{slide.link}}">{{slide.linkText}}</a>
       </div>
