@@ -3,7 +3,7 @@
     <uib-slide ng-repeat="slide in slides" active="slide.active" class="slide" background-src="{{slide.image}}">
       <div class="carousel-caption">
         <p>{{slide.description}}</p>
-        <a class="btn btn-lg btn-primary" ng-href="{{slide.link}}">{{slide.linkText}}</a>
+        <a class="btn btn-lg btn-primary" ng-href="{{slide.link}}">{{slide.linkText}} <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i></a>
       </div>
     </uib-slide>
   </uib-carousel>
