@@ -24,9 +24,12 @@ figcaption {
     // background-color: rgba($teal, 0.8);
     font-size: 400%;
     font-weight: bolder;
+    margin-bottom: 1em;
   }
 
-
+.navbar {
+  margin-bottom: 0px;
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;

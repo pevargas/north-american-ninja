@@ -1,8 +1,10 @@
-<h2>Photography</h2>
-<p>I'm an amateur shutterbug when it comes to photography. Recently, I learned how to use Adobe's Lightroom and fixed up some of my past photos.</p>
+<div class="container">
+  <h2>Photography</h2>
+  <p>I'm an amateur shutterbug when it comes to photography. Recently, I learned how to use Adobe's Lightroom and fixed up some of my past photos.</p>
 
-<div ng-controller="ThumbnailCtrl" ng-init="init('photography')" class="row">
-  <div class="col-md-2" ng-repeat="thumb in thumbs">
-    <img ng-src="{{thumb.image}}" class="thumbnail" ng-click="openModal('{{source}}/{{thumb.title}}.json')"/>
+  <div ng-controller="ThumbnailCtrl" ng-init="init('photography')" class="row">
+    <div class="col-md-2" ng-repeat="thumb in thumbs">
+      <img ng-src="{{thumb.image}}" class="thumbnail" ng-click="openModal('{{source}}/{{thumb.title}}.json')"/>
+    </div>
   </div>
 </div>
