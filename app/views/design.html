@@ -1,13 +1,8 @@
 <h2>Design</h2>
 <p>Examples of my design work for various organizations.</p>
-<div class="row">
-  <div class="col-md-2"><img src="/images/design/thumbs/dm1-sequential-images.png" alt="Digital Media One Sequential Images" class="thumbnail" ng-click="openModal('design/dm1-sequential-images.json')"/></div>
-  <div class="col-md-2"><img src="/images/design/thumbs/fodd-unconventional-typeface.jpg" alt="Fundamentals of Digital Design Unconventional Typeface Moxie" class="thumbnail" ng-click="openModal('design/fodd-unconventional-typeface.json')"/></div>
-  <div class="col-md-2"><img src="/images/design/thumbs/postcard-mhfb-freedom-swing-formal-affair.png" alt="Postcard MHFB Freedom Swing Formal Affair" class="thumbnail" ng-click="openModal('design/postcard-mhfb-freedom-swing-formal-affair.json')"/></div>
-  <div class="col-md-2"><img src="/images/design/thumbs/business-cards-anonymous.png" alt="Business Card with Anonymous Quote" class="thumbnail" ng-click="openModal('design/business-cards-anonymous.json')"/></div>
-  <div class="col-md-2"><img src="/images/design/thumbs/business-cards-zig-ziglar.png" alt="Business Card with Zig Ziglar Quote" class="thumbnail" ng-click="openModal('design/business-cards-zig-ziglar.json')"/></div>
-  <div class="col-md-2"><img src="/images/design/thumbs/business-cards-oscar-wilde.png" alt="Business Card with Oscar Wilde Quote" class="thumbnail" ng-click="openModal('design/business-cards-oscar-wilde.json')"/></div>
-  <div class="col-md-2"><img src="/images/design/thumbs/business-cards-lucille-ball.png" alt="Business Card with Lucille Ball Quote" class="thumbnail" ng-click="openModal('design/business-cards-lucille-ball.json')"/></div>
-  <div class="col-md-2"><img src="/images/design/thumbs/poster-quote-anonymous.png" alt="Poster Quote Anonymous" class="thumbnail" ng-click="openModal('design/poster-quote-anonymous.json')"/></div>
-  <div class="col-md-2"><img src="/images/design/thumbs/poster-quote-zigler.png" alt="Poster Quote Zigler" class="thumbnail" ng-click="openModal('design/poster-quote-zigler.json')"/></div>
+
+<div ng-controller="ThumbnailCtrl" ng-init="init('design')" class="row">
+  <div class="col-md-2" ng-repeat="thumb in thumbs">
+    <img ng-src="{{thumb.image}}" class="thumbnail" ng-click="openModal('{{source}}/{{thumb.title}}.json')"/>
+  </div>
 </div>
