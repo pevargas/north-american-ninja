@@ -1,22 +1,8 @@
 <h2>Photography</h2>
-<p>I'm an amateur shutterbug when it comes to photogrpahy. Recently, I learned how to use Adobe's Lightroom and fixed up some of my past photos.</p>
-<div class="row">
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-1.jpg" alt="Victoria Island, British Columbia" class="thumbnail" ng-click="openModal('photography/to-behance-1.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-2.jpg" alt="Vancouver, Biritsh Columbia" class="thumbnail" ng-click="openModal('photography/to-behance-2.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-3.jpg" alt="Idaho" class="thumbnail" ng-click="openModal('photography/to-behance-3.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-4.jpg" alt="Elitch Gardens, Denver, Colorado" class="thumbnail" ng-click="openModal('photography/to-behance-4.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-5.jpg" alt="Elitch Gardens, Denver, Colorado" class="thumbnail" ng-click="openModal('photography/to-behance-5.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-6.jpg" alt="Cash Register Building, Denver, Colorado" class="thumbnail" ng-click="openModal('photography/to-behance-6.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-7.jpg" alt="Manitou Springs, Colorado" class="thumbnail" ng-click="openModal('photography/to-behance-7.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-8.jpg" alt="YMCA of the Rockies, Estes Park, Colorado" class="thumbnail" ng-click="openModal('photography/to-behance-8.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-9.jpg" alt="YMCA of the Rockies, Estes Park, Colorado" class="thumbnail" ng-click="openModal('photography/to-behance-9.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-10.jpg" alt="Vermont" class="thumbnail" ng-click="openModal('photography/to-behance-10.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-11.jpg" alt="Lake Champlain, Vermont" class="thumbnail" ng-click="openModal('photography/to-behance-11.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-12.jpg" alt="Montréal, Québec" class="thumbnail" ng-click="openModal('photography/to-behance-12.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-13.jpg" alt="Colorado National Monument, Grand Junction, Colorado" class="thumbnail" ng-click="openModal('photography/to-behance-13.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-14.jpg" alt="Moab, Utah" class="thumbnail" ng-click="openModal('photography/to-behance-14.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-15.jpg" alt="I See What You Mean, Denver, Colorado" class="thumbnail" ng-click="openModal('photography/to-behance-15.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-16.jpg" alt="Kansas" class="thumbnail" ng-click="openModal('photography/to-behance-16.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-17.jpg" alt="Flatirons, Boulder, Colorado" class="thumbnail" ng-click="openModal('photography/to-behance-17.json')"/></div>
-  <div class="col-md-2"><img src="/images/photography/thumbs/to-behance-18.jpg" alt="University of Colorado, Boulder, Colorado" class="thumbnail" ng-click="openModal('photography/to-behance-18.json')"/></div>
+<p>I'm an amateur shutterbug when it comes to photography. Recently, I learned how to use Adobe's Lightroom and fixed up some of my past photos.</p>
+
+<div ng-controller="ThumbnailCtrl" ng-init="init('photography')" class="row">
+  <div class="col-md-2" ng-repeat="thumb in thumbs">
+    <img ng-src="{{thumb.image}}" class="thumbnail" ng-click="openModal('{{source}}/{{thumb.title}}.json')"/>
+  </div>
 </div>
