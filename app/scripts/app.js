@@ -40,6 +40,11 @@ angular
         controller: 'ModalCtrl',
         controllerAs: 'code'
       })
+      .when('/code/:id', {
+        templateUrl: 'views/projectdetail.html',
+        controller: 'ProjectdetailCtrl',
+        controllerAs: 'project'
+      })
       .when('/resume', {
         templateUrl: 'views/resume.html',
         controller: 'ResumeCtrl',
@@ -65,10 +70,10 @@ angular
       });
 
       // Check browser compatibility
-      if (window.history && window.history.pushState) {
-        $locationProvider.html5Mode({
-          enabled: true,
-          requireBase: false
-        });
-      }
+      // if (window.history && window.history.pushState) {
+      //   $locationProvider.html5Mode({
+      //     enabled: true,
+      //     requireBase: false
+      //   });
+      // }
   }
