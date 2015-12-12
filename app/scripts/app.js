@@ -1,3 +1,4 @@
+/* jshint latedef:nofunc */
 'use strict';
 
 /**
@@ -20,7 +21,9 @@ angular
     'ngTouch',
     'ui.bootstrap'
   ])
-  .config(function ($routeProvider) {
+  .config(['$routeProvider', '$locationProvider', appMain]);
+
+  function appMain($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -60,4 +63,12 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+
+      // Check browser compatibility
+      if (window.history && window.history.pushState) {
+        $locationProvider.html5Mode({
+          enabled: true,
+          requireBase: false
+        });
+      }
+  }
