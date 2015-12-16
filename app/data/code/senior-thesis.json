@@ -1,7 +1,7 @@
 {
   "title":"Technology, Arts and Media Senior Thesis Project",
   "date":"2014-05",
-  "description": "Created Rails Application to study the use of Queer Jargon. Utilized APIs, such as UrbanDictionary, Tumblr, Twitter, Wikipedia, and Instagram, to compare and contrast word uses.",
+  "description": "Created node.js application to study the use of Queer jargon. Utilized APIs, such as UrbanDictionary, Tumblr, Twitter, Wikipedia, Flicker, and Instagram, to compare and contrast word definitions with image usages.",
   "tags": ["node.js", "express.js", "mongodb", "less", "jade", "javascript"],
   "image":"/images/photography/vargas-code-perl-geostan.jpg"
 }
