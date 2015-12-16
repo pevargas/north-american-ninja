@@ -23,7 +23,7 @@ angular
   ])
   .config(['$routeProvider', '$locationProvider', appMain]);
 
-  function appMain($routeProvider, $locationProvider) {
+  function appMain($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -39,11 +39,6 @@ angular
         templateUrl: 'views/code.html',
         controller: 'ModalCtrl',
         controllerAs: 'code'
-      })
-      .when('/code/:id', {
-        templateUrl: 'views/projectdetail.html',
-        controller: 'ProjectdetailCtrl',
-        controllerAs: 'project'
       })
       .when('/resume', {
         templateUrl: 'views/resume.html',
@@ -64,6 +59,11 @@ angular
         templateUrl: 'views/music.html',
         controller: 'MusicCtrl',
         controllerAs: 'music'
+      })
+      .when('/:category/:item', {
+        templateUrl: 'views/project.html',
+        controller: 'ProjectCtrl',
+        controllerAs: 'project'
       })
       .otherwise({
         redirectTo: '/'

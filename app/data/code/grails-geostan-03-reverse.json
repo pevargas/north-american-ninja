@@ -1,6 +1,0 @@
-{
-  "title":"PB GeoStan &sect; Reverse Geocoding",
-  "date":"2014-01",
-  "image":"/images/code/grails-geostan-03-reverse.png",
-  "description":"Created a grails application to showcase Pitney Bowes' geocoder, GeoStan.\n\nThe grails application has support for reverse geocoding. This means you can search for a latitude and longitude point and the geocoders will try an find the closest address."
-}

@@ -1,7 +1,7 @@
 <div ng-controller="CarouselCtrl">
   <uib-carousel interval="5000" no-wrap="false" class="carousel">
     <uib-slide ng-repeat="slide in slides" active="slide.active" class="slide" background-src="{{slide.image}}">
-      <div class="carousel-caption">
+      <div class="carousel-caption hero-text">
         <p>{{slide.description}}</p>
         <a class="btn btn-lg btn-primary" ng-href="{{slide.link}}">{{slide.linkText}} <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i></a>
       </div>

@@ -4,7 +4,9 @@
 
   <div ng-controller="ThumbnailCtrl" ng-init="init('design')" class="row">
     <div class="col-md-2" ng-repeat="thumb in thumbs">
-      <img ng-src="{{thumb.image}}" class="thumbnail" ng-click="openModal('{{source}}/{{thumb.title}}.json')"/>
+      <a ng-href="#/{{source}}/{{thumb.title}}">
+        <img ng-src="{{thumb.image}}" class="thumbnail"/>
+      </a>
     </div>
   </div>
 </div>

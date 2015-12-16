@@ -20,43 +20,13 @@
     "alt":"Digital Media One Sequential Images"
   },
   {
-    "title":"fodd-unconventional-typeface",
-    "image":"/images/design/thumbs/fodd-unconventional-typeface.jpg",
-    "alt":"Fundamentals of Digital Design Unconventional Typeface Moxie"
-  },
-  {
     "title":"postcard-mhfb-freedom-swing-formal-affair",
     "image":"/images/design/thumbs/postcard-mhfb-freedom-swing-formal-affair.png",
     "alt":"Postcard MHFB Freedom Swing Formal Affair"
   },
   {
-    "title":"business-cards-anonymous",
-    "image":"/images/design/thumbs/business-cards-anonymous.png",
-    "alt":"Business Card with Anonymous Quote"
-  },
-  {
-    "title":"business-cards-zig-ziglar",
+    "title":"business-cards",
     "image":"/images/design/thumbs/business-cards-zig-ziglar.png",
-    "alt":"Business Card with Zig Ziglar Quote"
-  },
-  {
-    "title":"business-cards-oscar-wilde",
-    "image":"/images/design/thumbs/business-cards-oscar-wilde.png",
-    "alt":"Business Card with Oscar Wilde Quote"
-  },
-  {
-    "title":"business-cards-lucille-ball",
-    "image":"/images/design/thumbs/business-cards-lucille-ball.png",
-    "alt":"Business Card with Lucille Ball Quote"
-  },
-  {
-    "title":"poster-quote-anonymous",
-    "image":"/images/design/thumbs/poster-quote-anonymous.png",
-    "alt":"Poster Quote Anonymous"
-  },
-  {
-    "title":"poster-quote-zigler",
-    "image":"/images/design/thumbs/poster-quote-zigler.png",
-    "alt":"Poster Quote Zigler"
+    "alt":"Business Cards"
   }
 ]

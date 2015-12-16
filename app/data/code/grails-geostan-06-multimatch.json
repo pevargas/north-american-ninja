@@ -1,6 +1,0 @@
-{
-  "title":"PB GeoStan &sect; Multimatch",
-  "date":"2014-01",
-  "image":"/images/code/grails-geostan-06-multimatch.png",
-  "description":"Created a grails application to showcase Pitney Bowes' geocoder, GeoStan.\n\nHere is a multi-match result. GeoStan found three possible results while Google picked one for the user. Which result do you think is more correct based on what the user put in?"
-}

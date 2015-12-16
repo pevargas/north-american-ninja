@@ -1,6 +1,0 @@
-{
-  "title":"PB GeoStan &sect; Infoboxes",
-  "date":"2014-01",
-  "image":"/images/code/grails-geostan-04-infobox.png",
-  "description":"Created a grails application to showcase Pitney Bowes' geocoder, GeoStan.\n\nIf a user hovers over any of the points, they can see the result in an info-box."
-}
