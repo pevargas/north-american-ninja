@@ -1,6 +1,7 @@
 // bower:scss
 // endbower
 $teal: #00A5C9;
+$icon-size: 30px;
 
 figcaption, .caption {
   font-style: italic;
@@ -50,6 +51,9 @@ figcaption, .caption {
 .navbar {
   margin-bottom: 0px;
 }
+  .navbar-static-bottom {
+    bottom: 0;
+  }
 
 .capitalize {
   text-transform: capitalize;
@@ -62,6 +66,46 @@ figcaption, .caption {
   .language-tags::before {
     content: "#"
   }
+
+@mixin icon-sizes($factor: 1) {
+  background-size:  (6 * $icon-size) * $factor;
+  width:  $icon-size * $factor;
+  height: $icon-size * $factor;
+  margin-top: -($icon-size * $factor) * 0.5;
+  margin-bottom: -($icon-size * $factor) * 0.30;
+}
+
+  i.icon-menu, i.icon-user, i.icon-document, i.icon-console, i.icon-graph, i.icon-record, i.icon-tam, i.icon-links,
+  i.icon-vargas-logo, i.icon-email, i.icon-phone, i.icon-git, i.icon-stack, i.icon-linked, i.icon-behance, i.icon-camera {
+    background-image: url( '/images/vargas-icons.png' );
+    background-repeat: no-repeat;
+    display: inline-block;
+    @include icon-sizes();
+  }
+
+  $logo-factor: 1.25;
+  i.icon-vargas-logo.brand-logo {
+    @include icon-sizes($logo-factor);
+    background-position: -2 * ($icon-size * $logo-factor)  -1 * ($icon-size * $logo-factor);
+  }
+
+  i.icon-menu         { background-position:  0 * $icon-size   0 * $icon-size; }
+  i.icon-record       { background-position: -1 * $icon-size   0 * $icon-size; }
+  i.icon-user         { background-position: -2 * $icon-size   0 * $icon-size; }
+  i.icon-document     { background-position: -3 * $icon-size   0 * $icon-size; }
+  i.icon-console      { background-position: -4 * $icon-size   0 * $icon-size; }
+  i.icon-graph        { background-position: -5 * $icon-size   0 * $icon-size; }
+  i.icon-tam          { background-position:  0 * $icon-size  -1 * $icon-size; }
+  i.icon-links        { background-position: -1 * $icon-size  -1 * $icon-size; }
+  i.icon-vargas-logo  { background-position: -2 * $icon-size  -1 * $icon-size; }
+  i.icon-email        { background-position: -3 * $icon-size  -1 * $icon-size; }
+  i.icon-phone        { background-position: -4 * $icon-size  -1 * $icon-size; }
+  i.icon-git          { background-position: -5 * $icon-size  -1 * $icon-size; }
+  i.icon-stack        { background-position:  0 * $icon-size  -2 * $icon-size; }
+  i.icon-linked       { background-position: -1 * $icon-size  -2 * $icon-size; }
+  i.icon-behance      { background-position: -2 * $icon-size  -2 * $icon-size; }
+  i.icon-camera       { background-position: -3 * $icon-size  -2 * $icon-size; }
+
 //
 // body {
 //   padding: 0;
