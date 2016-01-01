@@ -5,14 +5,14 @@
     "alt":"Perl, Pitney Bowes"
   },
   {
-    "title":"vargas-cu-auction",
-    "image":"/images/photography/thumbs/vargas-cu-auction.jpg",
-    "alt":"Typwriter, University of Colorado, Boulder, Colorado"
+    "title":"vargas-new-york-city",
+    "image":"/images/photography/thumbs/vargas-new-york-city.jpg",
+    "alt":"New York City at Night"
   },
   {
-    "title":"vargas-cu-flatirons",
-    "image":"/images/photography/thumbs/vargas-cu-flatirons.jpg",
-    "alt":"Flatirons, Boulder, Colorado"
+    "title":"vargas-statue-of-liberty",
+    "image":"/images/photography/thumbs/vargas-statue-of-liberty.jpg",
+    "alt":"Statue of Liberty, NYC"
   },
   {
     "title":"vargas-denver-blue-bear",
@@ -25,6 +25,11 @@
     "alt":"Cash Register Building, Denver, Colorado"
   },
   {
+    "title":"vargas-idaho-bridge",
+    "image":"/images/photography/thumbs/vargas-idaho-bridge.jpg",
+    "alt":"Idaho, Bridge"
+  },
+  {
     "title":"vargas-elitch-gardens-carousel",
     "image":"/images/photography/thumbs/vargas-elitch-gardens-carousel.jpg",
     "alt":"Elitch Gardens, Denver, Colorado"
@@ -35,24 +40,9 @@
     "alt":"Elitch Gardens, Denver, Colorado"
   },
   {
-    "title":"vargas-estes-park-forest",
-    "image":"/images/photography/thumbs/vargas-estes-park-forest.jpg",
-    "alt":"YMCA of the Rockies, Estes Park, Colorado"
-  },
-  {
-    "title":"vargas-estes-park-path",
-    "image":"/images/photography/thumbs/vargas-estes-park-path.jpg",
-    "alt":"YMCA of the Rockies, Estes Park, Colorado"
-  },
-  {
     "title":"vargas-grand-junction",
     "image":"/images/photography/thumbs/vargas-grand-junction.jpg",
     "alt":"Colorado National Monument, Grand Junction, Colorado"
-  },
-  {
-    "title":"vargas-idaho-bridge",
-    "image":"/images/photography/thumbs/vargas-idaho-bridge.jpg",
-    "alt":"Idaho, Bridge"
   },
   {
     "title":"vargas-kansas-windmills",
@@ -65,24 +55,9 @@
     "alt":"Lake Champlain, Vermont"
   },
   {
-    "title":"vargas-manatou-springs",
-    "image":"/images/photography/thumbs/vargas-manatou-springs.jpg",
-    "alt":"Manitou Springs, Colorado"
-  },
-  {
     "title":"vargas-montreal",
     "image":"/images/photography/thumbs/vargas-montreal.jpg",
     "alt":"Montréal, Québec"
-  },
-  {
-    "title":"vargas-new-york-city",
-    "image":"/images/photography/thumbs/vargas-new-york-city.jpg",
-    "alt":"New York City at Night"
-  },
-  {
-    "title":"vargas-statue-of-liberty",
-    "image":"/images/photography/thumbs/vargas-statue-of-liberty.jpg",
-    "alt":"Statue of Liberty, NYC"
   },
   {
     "title":"vargas-utah-petroglyphs",
@@ -100,8 +75,8 @@
     "alt":"Vermont"
   },
   {
-    "title":"vargas-victoria-island-vancouver",
-    "image":"/images/photography/thumbs/vargas-victoria-island-vancouver.jpg",
-    "alt":"Victoria Island, British Columbia"
+    "title":"vargas-cu-flatirons",
+    "image":"/images/photography/thumbs/vargas-cu-flatirons.jpg",
+    "alt":"Flatirons, Boulder, Colorado"
   }
 ]
