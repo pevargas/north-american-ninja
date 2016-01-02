@@ -107,6 +107,21 @@ figcaption, .caption {
   i.icon-behance      { background-position: -2 * $icon-size  -2 * $icon-size; }
   i.icon-camera       { background-position: -3 * $icon-size  -2 * $icon-size; }
 
+.resume h3 {
+  border-bottom: 1px solid $teal;
+}
+.resume .dates-inline {
+  color: gray;
+  font-style: italic;
+}
+.resume .dates {
+  @extend .dates-inline;
+  text-align: right;
+  display: block;
+  margin-top: -2em;
+}
+
+
 //
 // body {
 //   padding: 0;
