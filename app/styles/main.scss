@@ -121,6 +121,22 @@ figcaption, .caption {
   margin-top: -2em;
 }
 
+.marketing section {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+  .marketing section:nth-child(2n) {
+    background-color: $teal;
+    color: white;
+  }
+  .marketing section:nth-child(3n) {
+    background-color: gray;
+    color: white;
+  }
+
+  .marketing section p, .marketing section p .lead {
+    font-size: 2em;
+  }
 
 //
 // body {
