@@ -1,11 +1,12 @@
 // bower:scss
 // endbower
 $teal: #00A5C9;
+$dark-gray: #333333;
 $icon-size: 30px;
 
 figcaption, .caption {
   font-style: italic;
-  color: #333333;
+  color: $dark-gray;
 }
 
 .browsehappy {
@@ -122,21 +123,56 @@ figcaption, .caption {
 }
 
 .marketing section {
-  padding-top: 10em;
-  padding-bottom: 10em;
+  padding-top: 15em;
+  padding-bottom: 15em;
+  background-color: $teal;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
 }
-  .marketing section:nth-child(2n) {
-    background-color: $teal;
-    color: white;
-  }
-  .marketing section:nth-child(3n) {
-    background-color: gray;
-    color: white;
-  }
+  // .marketing section:nth-child(2n) {
+  //   background-color: $teal;
+  //   color: white;
+  // }
+  // .marketing section:nth-child(3n) {
+  //   background-color: gray;
+  //   color: white;
+  // }
 
   .marketing section p, .marketing section p .lead {
     font-size: 2em;
+    // color: white;
   }
+
+  .marketing section#group {
+  }
+  .marketing section#stack {
+  }
+  .marketing section#contact {
+    background-color: $teal;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  .marketing section div img {
+    width: 90%;
+    box-shadow: 0 0 50px lighten( $dark-gray, 10% );
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .marketing section.gaussed {
+    // width: 100%;
+    // height: 1000px;
+    // margin: 0 auto; padding: 15pt;
+    // position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 0 0 50px lighten( $dark-gray, 10% ) inset;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+  }
+
 
 //
 // body {
