@@ -1,8 +1,20 @@
 // bower:scss
 // endbower
 $teal: #00A5C9;
+$lite-gray: #f3f3f3;
 $dark-gray: #333333;
 $icon-size: 30px;
+
+body {
+  background-color: $lite-gray;
+}
+
+h1, h2, h3 {
+  color: $teal;
+}
+h4, h5 {
+  color: $dark-gray;
+}
 
 figcaption, .caption {
   font-style: italic;
@@ -54,7 +66,7 @@ figcaption, .caption {
 }
   .navbar-static-bottom {
     bottom: 0;
-    margin-top: 1em;
+    // margin-top: 1em;
   }
 
 .capitalize {
@@ -125,9 +137,9 @@ figcaption, .caption {
 .marketing section {
   padding-top: 15em;
   padding-bottom: 15em;
-  background-color: $teal;
-  color: white;
-  text-shadow: 1px 1px 1px #000;
+  // background-color: $teal;
+  // color: white;
+  // text-shadow: 1px 1px 1px #000;
 }
   // .marketing section:nth-child(2n) {
   //   background-color: $teal;
@@ -141,6 +153,9 @@ figcaption, .caption {
   .marketing section p, .marketing section p .lead {
     font-size: 2em;
     // color: white;
+  }
+  .marketing section p .lead {
+    color: $teal;
   }
 
   .marketing section#group {
