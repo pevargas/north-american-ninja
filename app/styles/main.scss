@@ -97,28 +97,84 @@ figcaption, .caption {
     @include icon-sizes();
   }
 
+  @mixin icon-menu        ($factor: 1) { background-position:  0 * $icon-size * $factor   0 * $icon-size * $factor; }
+  @mixin icon-record      ($factor: 1) { background-position: -1 * $icon-size * $factor   0 * $icon-size * $factor; }
+  @mixin icon-user        ($factor: 1) { background-position: -2 * $icon-size * $factor   0 * $icon-size * $factor; }
+  @mixin icon-document    ($factor: 1) { background-position: -3 * $icon-size * $factor   0 * $icon-size * $factor; }
+  @mixin icon-console     ($factor: 1) { background-position: -4 * $icon-size * $factor   0 * $icon-size * $factor; }
+  @mixin icon-graph       ($factor: 1) { background-position: -5 * $icon-size * $factor   0 * $icon-size * $factor; }
+  @mixin icon-tam         ($factor: 1) { background-position:  0 * $icon-size * $factor  -1 * $icon-size * $factor; }
+  @mixin icon-links       ($factor: 1) { background-position: -1 * $icon-size * $factor  -1 * $icon-size * $factor; }
+  @mixin icon-vargas-logo ($factor: 1) { background-position: -2 * $icon-size * $factor  -1 * $icon-size * $factor; }
+  @mixin icon-email       ($factor: 1) { background-position: -3 * $icon-size * $factor  -1 * $icon-size * $factor; }
+  @mixin icon-phone       ($factor: 1) { background-position: -4 * $icon-size * $factor  -1 * $icon-size * $factor; }
+  @mixin icon-git         ($factor: 1) { background-position: -5 * $icon-size * $factor  -1 * $icon-size * $factor; }
+  @mixin icon-stack       ($factor: 1) { background-position:  0 * $icon-size * $factor  -2 * $icon-size * $factor; }
+  @mixin icon-linked      ($factor: 1) { background-position: -1 * $icon-size * $factor  -2 * $icon-size * $factor; }
+  @mixin icon-behance     ($factor: 1) { background-position: -2 * $icon-size * $factor  -2 * $icon-size * $factor; }
+  @mixin icon-camera      ($factor: 1) { background-position: -3 * $icon-size * $factor  -2 * $icon-size * $factor; }
+
   $logo-factor: 1.25;
   i.icon-vargas-logo.brand-logo {
     @include icon-sizes($logo-factor);
-    background-position: -2 * ($icon-size * $logo-factor)  -1 * ($icon-size * $logo-factor);
+    @include icon-vargas-logo($logo-factor);
   }
 
-  i.icon-menu         { background-position:  0 * $icon-size   0 * $icon-size; }
-  i.icon-record       { background-position: -1 * $icon-size   0 * $icon-size; }
-  i.icon-user         { background-position: -2 * $icon-size   0 * $icon-size; }
-  i.icon-document     { background-position: -3 * $icon-size   0 * $icon-size; }
-  i.icon-console      { background-position: -4 * $icon-size   0 * $icon-size; }
-  i.icon-graph        { background-position: -5 * $icon-size   0 * $icon-size; }
-  i.icon-tam          { background-position:  0 * $icon-size  -1 * $icon-size; }
-  i.icon-links        { background-position: -1 * $icon-size  -1 * $icon-size; }
-  i.icon-vargas-logo  { background-position: -2 * $icon-size  -1 * $icon-size; }
-  i.icon-email        { background-position: -3 * $icon-size  -1 * $icon-size; }
-  i.icon-phone        { background-position: -4 * $icon-size  -1 * $icon-size; }
-  i.icon-git          { background-position: -5 * $icon-size  -1 * $icon-size; }
-  i.icon-stack        { background-position:  0 * $icon-size  -2 * $icon-size; }
-  i.icon-linked       { background-position: -1 * $icon-size  -2 * $icon-size; }
-  i.icon-behance      { background-position: -2 * $icon-size  -2 * $icon-size; }
-  i.icon-camera       { background-position: -3 * $icon-size  -2 * $icon-size; }
+  i.icon-menu         { @include icon-menu       (); }
+  i.icon-record       { @include icon-record     (); }
+  i.icon-user         { @include icon-user       (); }
+  i.icon-document     { @include icon-document   (); }
+  i.icon-console      { @include icon-console    (); }
+  i.icon-graph        { @include icon-graph      (); }
+  i.icon-tam          { @include icon-tam        (); }
+  i.icon-links        { @include icon-links      (); }
+  i.icon-vargas-logo  { @include icon-vargas-logo(); }
+  i.icon-email        { @include icon-email      (); }
+  i.icon-phone        { @include icon-phone      (); }
+  i.icon-git          { @include icon-git        (); }
+  i.icon-stack        { @include icon-stack      (); }
+  i.icon-linked       { @include icon-linked     (); }
+  i.icon-behance      { @include icon-behance    (); }
+  i.icon-camera       { @include icon-camera     (); }
+
+  $xlg-size: 3;
+  i.icon-xlg                   { @include icon-sizes      ($xlg-size); }
+  i.icon-menu.icon-xlg         { @include icon-menu       ($xlg-size); }
+  i.icon-record.icon-xlg       { @include icon-record     ($xlg-size); }
+  i.icon-user.icon-xlg         { @include icon-user       ($xlg-size); }
+  i.icon-document.icon-xlg     { @include icon-document   ($xlg-size); }
+  i.icon-console.icon-xlg      { @include icon-console    ($xlg-size); }
+  i.icon-graph.icon-xlg        { @include icon-graph      ($xlg-size); }
+  i.icon-tam.icon-xlg          { @include icon-tam        ($xlg-size); }
+  i.icon-links.icon-xlg        { @include icon-links      ($xlg-size); }
+  i.icon-vargas-logo.icon-xlg  { @include icon-vargas-logo($xlg-size); }
+  i.icon-email.icon-xlg        { @include icon-email      ($xlg-size); }
+  i.icon-phone.icon-xlg        { @include icon-phone      ($xlg-size); }
+  i.icon-git.icon-xlg          { @include icon-git        ($xlg-size); }
+  i.icon-stack.icon-xlg        { @include icon-stack      ($xlg-size); }
+  i.icon-linked.icon-xlg       { @include icon-linked     ($xlg-size); }
+  i.icon-behance.icon-xlg      { @include icon-behance    ($xlg-size); }
+  i.icon-camera.icon-xlg       { @include icon-camera     ($xlg-size); }
+
+  $lg-size: 2;
+  i.icon-lg                   { @include icon-sizes      ($lg-size); }
+  i.icon-menu.icon-lg         { @include icon-menu       ($lg-size); }
+  i.icon-record.icon-lg       { @include icon-record     ($lg-size); }
+  i.icon-user.icon-lg         { @include icon-user       ($lg-size); }
+  i.icon-document.icon-lg     { @include icon-document   ($lg-size); }
+  i.icon-console.icon-lg      { @include icon-console    ($lg-size); }
+  i.icon-graph.icon-lg        { @include icon-graph      ($lg-size); }
+  i.icon-tam.icon-lg          { @include icon-tam        ($lg-size); }
+  i.icon-links.icon-lg        { @include icon-links      ($lg-size); }
+  i.icon-vargas-logo.icon-lg  { @include icon-vargas-logo($lg-size); }
+  i.icon-email.icon-lg        { @include icon-email      ($lg-size); }
+  i.icon-phone.icon-lg        { @include icon-phone      ($lg-size); }
+  i.icon-git.icon-lg          { @include icon-git        ($lg-size); }
+  i.icon-stack.icon-lg        { @include icon-stack      ($lg-size); }
+  i.icon-linked.icon-lg       { @include icon-linked     ($lg-size); }
+  i.icon-behance.icon-lg      { @include icon-behance    ($lg-size); }
+  i.icon-camera.icon-lg       { @include icon-camera     ($lg-size); }
+
 
 .resume h3 {
   border-bottom: 1px solid $teal;
@@ -182,7 +238,9 @@ figcaption, .caption {
     text-shadow: 0px 1px 2px lighten( $dark-gray, 10% );
   }
 
-
+.contact-list {
+  margin-top: 1em;
+}
 //
 // body {
 //   padding: 0;

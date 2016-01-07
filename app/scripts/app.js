@@ -60,6 +60,11 @@ angular
         controller: 'MusicCtrl',
         controllerAs: 'music'
       })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
+      })
       .when('/:category/:item', {
         templateUrl: 'views/project.html',
         controller: 'ProjectCtrl',
