@@ -7,17 +7,17 @@
     {
       "title":"Homepage",
       "image":"/images/code/queertionary-homepage.png",
-      "description":"Basic homepage features a new word to explore, what the site is about and a disclaimer"
+      "description":"Basic homepage features a new word to explore, an explanation of the site and a disclaimer."
     },
     {
       "title":"Browse",
       "image":"/images/code/queertionary-browse.png",
-      "description":"To explord what's available, a browse page is available"
+      "description":"To explore what's available, a browse page is available."
     },
     {
       "title":"Definition",
       "image":"/images/code/queertionary-definition.png",
-      "description":"This page features the definition of a word from UrbanDictionary surrounded by examples pulled from Flicker and Tumblr tagged with the word"
+      "description":"This page features the definition of a word surrounded by example images tagged with the word."
     }
   ]
 }

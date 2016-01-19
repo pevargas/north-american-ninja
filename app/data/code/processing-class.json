@@ -1,7 +1,7 @@
 {
   "title":"CU Class: Digital Media 2",
   "date":"2013-12",
-  "description": "This class entailed learning the IDE Processing. Based on Java, this language encapsulated the nitty-gritty of the Java programming language, yet allowed for Java objects to be utilized. In addition, this language's main purpose was for fast and easy construction of graphic application.",
+  "description": "This class entailed learning the Processing IDE and language. Based on Java, this language encapsulates the nitty-gritty of the Java programming language, allowing for fast and easy programming of graphical applications.",
   "tags": ["processing", "java"],
   "parts": [
     {
@@ -13,20 +13,8 @@
     {
       "title":"Generative Art",
       "image":"/images/code/processing-generative-art.gif",
-      "description":"Developed an interactive, piece of generative art. The project uses characters the user will type and draw them as a square and color.",
+      "description":"This generative art project uses characters the user types and represents them as a square and color.",
       "link":"http://redwood.colorado.edu/vargasp/dm2/proj1/"
-    },
-    {
-      "title":"Organic Motion",
-      "image":"/images/code/processing-new-life-form.gif",
-      "description":"Developed an animation of a new-life form.",
-      "link":"http://redwood.colorado.edu/vargasp/dm2/lab6/"
-    },
-    {
-      "title":"Conceptual Self Portrait",
-      "image":"/images/code/processing-video.gif",
-      "description":"For the final project I chose to do some video manipulation. I really like the look acrylic makes when stacked on top of each other, creating another image. I interlaced video clips with stock footage to make a mosaic of interesting images. The main reason for this program was to explore video manipulation. I really enjoyed the bit mashing of the different images and found some really interesting techniques along the way. (Video clips from BBC Motion Gallery)",
-      "link":"http://redwood.colorado.edu/vargasp/dm2/proj3/"
     }
   ]
 }
