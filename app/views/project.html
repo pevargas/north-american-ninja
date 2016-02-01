@@ -19,7 +19,8 @@
         <uib-carousel interval="5000" no-wrap="false" style="height:100%;">
           <uib-slide ng-repeat="part in data.parts" active="slide.active">
             <img ng-src="{{part.image}}" alt="{{part.title||data.title}}" style="margin:0px;width:100%;" />
-            <div ng-if="part.description" class="carousel-caption slide-background hover-hide">
+            <!-- <div ng-if="part.description" class="carousel-caption slide-background hover-hide"> -->
+            <div ng-if="part.description" class="carousel-caption-details">
               <p>{{part.description}}</p>
             </div>
           </uib-slide>

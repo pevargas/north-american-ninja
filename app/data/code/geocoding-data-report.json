@@ -1,23 +1,23 @@
 {
   "title":"Geocoding Data Report",
   "date":"2015-10",
-  "description": "Geocoding Data Report for Stakeholders",
+  "description": "Created a reporting website for product managers and other stakeholders. They wanted to stay up-to-date with the most important product production status in an easily consumable website.",
   "tags": ["grails", "groovy", "elastic-beanstalk", "aws", "postgresql", "jenkins"],
   "parts": [
     {
       "title":"Homepage",
       "image":"/images/code/geocoding-data-report-homepage.png",
-      "description":"Listing the current status of the current quarter's products in production is valuable for many stakeholders who need a quick status update"
+      "description":"Listing the present status of the current quarter's products in production is valuable for many stakeholders who need a quick status update."
     },
     {
       "title":"All Products",
       "image":"/images/code/geocoding-data-report-all-products.png",
-      "description":"To organize all of the data we produce, an index of all products is used with filtering options to parse the large amount of data"
+      "description":"To organize all of the data we produce, an index of all products is used with filtering options to parse the large amount of data."
     },
     {
       "title":"Country Specifics",
       "image":"/images/code/geocoding-data-report-country.png",
-      "description":"Drilling down into each specific country, a stakeholder can have an in-depth overview of the products available"
+      "description":"Drilling down into each specific country, a stakeholder can have an in-depth overview of the products available."
     },
     {
       "title":"Planning",
