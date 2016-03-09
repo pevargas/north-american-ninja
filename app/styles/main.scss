@@ -116,11 +116,20 @@ figcaption, .caption {
   text-transform: capitalize;
 }
 
-.language-tags {
+.tags {
+  list-style-type: none;
+}
+  .tags li {
+    display: inline-block;
+    border-radius: 50px;
+  }
+
+.language-tags, .tags li {
   background-color: $teal;
   margin-right: 0.5em;
+  color: white;
 }
-  .language-tags::before {
+  .language-tags::before, .tags li::before {
     content: "#"
   }
 

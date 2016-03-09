@@ -1,6 +1,9 @@
 <div class="container resume">
   <h2>Resume</h2>
-  <p><a href="/data/vargas-resume-spring-2016.pdf">Download a PDF version</a></p>
+  <p>
+    <a href="/data/vargas-resume-spring-2016.pdf">Download a PDF version</a><br/>
+    <a href="/data/vargas-resume-spring-2016.txt">Download a plain text version</a>
+  </p>
   <section>
     <h3>Skills</h3>
     <h4>Internet Technologies</h4>
@@ -8,7 +11,7 @@
     <h4>Programming Languages</h4>
     <p>Groovy, Java, Processing, C/C++</p>
     <h4>Tools and Utilities</h4>
-    <p>AWS, Jenkins, Git, GitHub, Atom, Yeoman, Bower, Grunt, MongoDB, Mongoose, PostgreSQL, IntelliJ, SVN, Sublime</p>
+    <p>AWS, Jenkins, Spock, Git, GitHub, Atom, Yeoman, Bower, Grunt, MongoDB, Mongoose, PostgreSQL, IntelliJ, SVN, Sublime</p>
     <h4>Miscellaneous</h4>
     <p>Agile Software Development, Interpersonal Skills, Graphic Design, Slack, JIRA</p>
   </section>
@@ -16,6 +19,7 @@
     <h3>Experience</h3>
     <h4>Software Engineer, Pitney Bowes Software <small>Boulder, CO</small></h4>
     <span class="dates">June 2014 &ndash; Present</span>
+    <span ng-repeat="tag in ['grails', 'groovy', 'java', 'less', 'postgresql', 'jenkins', 'aws', 'spock', 'bootstrap', 'svn']" class="badge language-tags">{{tag}}</span>
     <ul>
       <li>Implemented a status reporting website for stakeholders utilizing the Jenkins API.</li>
       <li>Built and automated a SQL testing framework for our data production pipeline.</li>
@@ -25,6 +29,7 @@
     </ul>
     <h4>Software Engineering Intern, Pitney Bowes Software <small>Boulder, CO</small></h4>
     <span class="dates">May 2013 &ndash; May 2014</span>
+    <span ng-repeat="tag in ['grails', 'groovy', 'javascript', 'less', 'c/c++', 'perl', 'svn']" class="badge language-tags">{{tag}}</span>
     <ul>
       <li>Improved performance of Geocoding software 10% by implementing Microsoft's Profile-Guided Optimization.</li>
       <li>Adapted the CPPUnit test-suite for Unix platforms, applying more thorough and rigorous software preparation.</li>
@@ -36,6 +41,7 @@
     <h3>Projects</h3>
     <h4>Portfolio Website [v5]</h4>
     <span class="dates">Jun 2015 &ndash; Present</span>
+    <span ng-repeat="tag in ['angular', 'javascript', 'bootstrap', 'sass', 'yeoman', 'bower', 'grunt', 'aws', 'illustrator', 'git']" class="badge language-tags">{{tag}}</span>
     <ul>
       <li><a href="http://www.yesthisispatrick.com">www.yesthisispatrick.com</a></li>
       <li>Implemented a portfolio website with low maintenance and easy updatability.</li>
@@ -44,6 +50,7 @@
     </ul>
     <h4>Geocoding Data Report</h4>
     <span class="dates">Feb 2015 &ndash; Present</span>
+    <span ng-repeat="tag in ['grails', 'groovy', 'postgresql', 'jenkins', 'aws', 'svn']" class="badge language-tags">{{tag}}</span>
     <ul>
       <li>Presented product managers and other stakeholders with the most important, up-to-date product production status in an easily consumable website.</li>
       <li>Automatically collected and intelligently predicted quarterly production plans for efficient and minimal quarterly planning meetings.</li>
@@ -51,12 +58,15 @@
     </ul>
     <h4>GeoStan Application</h4>
     <span class="dates">Jan 2014 &ndash; Feb 2014</span>
+    <span ng-repeat="tag in ['grails', 'groovy', 'java', 'illustrator', 'svn']" class="badge language-tags">{{tag}}</span>
     <ul>
       <li>Implemented a GUI in the form of a Grails Application for GeoStan.</li>
       <li>Utilized the Google-Maps API to display GeoStan output along side Google output.</li>
     </ul>
     <h4>Queertionary</h4>
     <span class="dates">Jan 2014 &ndash; May 2014</span>
+    <span ng-repeat="tag in ['angular', 'mongodb', 'javascript', 'node', 'git']" class="badge language-tags">{{tag}}</span>
+
     <ul>
       <li><a href="http://www.queerytionary.com/" rel="nofollow">www.queertionary.com</a></li>
       <li>Technology, Arts &amp; Media Senior Thesis Project.</li>
@@ -81,7 +91,6 @@
     <ul>
       <li>Instrumental Music <span class="dates-inline">Fall 2012 &ndash; present</span></li>
       <li>"Ask Me Anything" Volunteer <span class="dates-inline">Fall 2012 &ndash; Spring 2013</span></li>
-      <li>Active Member of Knitting Group <span class="dates-inline">Spring 2012 &ndash; Fall 2013</span></li>
       <li>Vice President &amp; Secretary for Engineering Student Group <span class="dates-inline">Fall 2011 &ndash; Spring 2012</span></li>
       <li>Secretary for Student Advisory Board to Student Resource Center <span class="dates-inline">Spring 2010 &ndash; Fall 2012</span></li>
       <li>Volunteer for Student Resource Center <span class="dates-inline">Spring 2010 &ndash; Spring 2011</span></li>
