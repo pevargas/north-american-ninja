@@ -1,6 +1,17 @@
 {
-  "name": "northamericanninja",
+  "name": "yesthisispatrick.com",
+  "version": "0.2.0",
   "private": true,
+  "author": "Patrick E. Vargas <patrick@yesthisispatrick.com> (http://www.yesthisispatrick.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pevargas/north-american-ninja.git"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "serve": "grunt serve",
+    "prod": "grunt build"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-angular-templates": "^0.5.7",
@@ -36,8 +47,5 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "grunt test"
   }
 }
