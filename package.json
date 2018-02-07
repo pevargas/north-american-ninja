@@ -8,7 +8,9 @@
     "lint": "eslint src/**/*.js --fix",
     "start": "npm run lint && react-scripts start",
     "build": "npm run lint && react-scripts build",
-    "test": "npm run lint && react-scripts test --env=jsdom"
+    "test": "npm run lint && react-scripts test --env=jsdom",
+    "coverage": "npm run lint && react-scripts test --env=jsdom --coverage",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -43,6 +45,7 @@
     "react-scripts": "1.1.0"
   },
   "devDependencies": {
+    "coveralls": "^3.0.0",
     "eslint": "^4.17.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-config-standard-react": "^5.0.0",
