@@ -2,9 +2,13 @@
   "name": "yesthisispatrick.com",
   "version": "1.0.0",
   "description": "Portfolio website for Patrick E. Vargas",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/**/*.js --fix",
+    "start": "npm run lint && react-scripts start",
+    "build": "npm run lint && react-scripts build",
+    "test": "npm run lint && react-scripts test --env=jsdom"
   },
   "repository": {
     "type": "git",
@@ -25,5 +29,27 @@
   "bugs": {
     "url": "https://github.com/pevargas/yesthisispatrick/issues"
   },
-  "homepage": "https://github.com/pevargas/yesthisispatrick#readme"
+  "homepage": "https://github.com/pevargas/yesthisispatrick#readme",
+  "dependencies": {
+    "dns": "file:./src/mock/dns",
+    "fetch": "^1.1.0",
+    "material-ui": "^1.0.0-beta.31",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-standard": "^3.0.1"
+  }    
 }
