@@ -5,7 +5,7 @@ import Typography from 'material-ui/Typography'
 import IconButton from 'material-ui/IconButton'
 import MenuIcon from 'material-ui-icons/Menu'
 
-class AppBarIcon extends React.Component {
+class NavBar extends React.Component {
   render () {
     return (
       <AppBar title='Patrick E. Vargas' position='static'>
@@ -23,4 +23,4 @@ class AppBarIcon extends React.Component {
   }
 }
 
-export default AppBarIcon
+export default NavBar

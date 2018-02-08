@@ -1,21 +1,22 @@
 import React from 'react'
-import AppBar from './AppBar'
 import Reboot from 'material-ui/Reboot'
+import NavBar from '../NavBar/NavBar'
+import Page from '../Page/Page'
 
-class Main extends React.Component {
+class App extends React.Component {
   render () {
     return (
       <div>
         <Reboot />
         <header>
-          <AppBar />
+          <NavBar />
         </header>
         <article>
-          <h1>Main</h1>
+          <Page />
         </article>
       </div>
     )
   }
 }
 
-export default Main
+export default App
